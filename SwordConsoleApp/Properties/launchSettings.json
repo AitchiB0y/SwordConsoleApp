@@ -2,7 +2,7 @@
   "profiles": {
     "SwordConsoleApp": {
       "commandName": "Project",
-      "commandLineArgs": "\"C:\\dev\\SwordConsoleApp\\SwordConsoleApp\\TestInput.txt\" ",
+      "commandLineArgs": "\"C:\\dev\\SwordConsoleApp\\SwordConsoleApp\\TestInput.txt\" --ignore-case",
       "jsWebView2Debugging": false
     }
   }

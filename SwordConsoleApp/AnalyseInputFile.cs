@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace SwordConsoleApp
 {
     public class AnalyseInputFile
@@ -75,6 +74,7 @@ namespace SwordConsoleApp
 
             // Get total characters and top 10 most frequent characters
             int totalCharacters = frequency.Sum(x => x.Count);
+            //int totalCharacters = filteredContent.;
             var topCharacters = frequency
                 .Take(10)
                 .Select(x => (x.Character, x.Count))

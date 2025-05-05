@@ -36,7 +36,7 @@ namespace SwordConsoleApp
 
             if (args.Length < 1)
             {
-                Console.WriteLine("No input file specified. Usage: SwordConsoleApp.exe <file-path> [--ignore-case]");
+                Console.WriteLine("No input file specified. Usage: SwordConsoleApp.exe <file-path> --ignore-case");
                 return false;
             }
 

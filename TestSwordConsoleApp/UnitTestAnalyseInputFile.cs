@@ -46,9 +46,9 @@ namespace SwordConsoleApp.Tests
         }
 
         [Theory]
-        [InlineData("The quick brown fox", true, 17, new object[] { new object[] { 'o', 2 }, new object[] { 't', 1 }, new object[] { 'h', 1 }, new object[] { 'e', 1 }, new object[] { 'q', 1 } })]
-        [InlineData("The quick brown fox", false, 17, new object[] { new object[] { 'o', 2 }, new object[] { 'T', 1 }, new object[] { 'h', 1 }, new object[] { 'e', 1 }, new object[] { 'q', 1 } })]
-        [InlineData(" \t\nThe quick brown fox\r\n", true, 17, new object[] { new object[] { 'o', 2 }, new object[] { 't', 1 }, new object[] { 'h', 1 }, new object[] { 'e', 1 }, new object[] { 'q', 1 } })]
+        [InlineData("The quick brown fox", true, 16, new object[] { new object[] { 'o', 2 }, new object[] { 't', 1 }, new object[] { 'h', 1 }, new object[] { 'e', 1 }, new object[] { 'q', 1 } })]
+        [InlineData("The quick brown fox", false, 16, new object[] { new object[] { 'o', 2 }, new object[] { 'T', 1 }, new object[] { 'h', 1 }, new object[] { 'e', 1 }, new object[] { 'q', 1 } })]
+        [InlineData(" \t\nThe quick brown fox\r\n", true, 16, new object[] { new object[] { 'o', 2 }, new object[] { 't', 1 }, new object[] { 'h', 1 }, new object[] { 'e', 1 }, new object[] { 'q', 1 } })]
         [InlineData("", true, 0, new object[0])]
         [InlineData("@@@!!!###", true, 9, new object[] { new object[] { '@', 3 }, new object[] { '!', 3 }, new object[] { '#', 3 } })]
         public void AnalyseCharacterFrequency_ShouldReturnCorrectResults(string input, bool ignoreCase, int expectedTotal, object[] expectedTop)
