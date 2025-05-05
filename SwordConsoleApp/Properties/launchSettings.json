@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "SwordConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\dev\\SwordConsoleApp\\SwordConsoleApp\\TestInput.txt\" ",
+      "jsWebView2Debugging": false
+    }
+  }
+}
